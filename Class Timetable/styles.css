@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(229, 229, 229);
+}
+
+caption{
+    font-size: large;
+}
+
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+    transition: all 0.3s, color 0.3s;
+}
+table{
+    width:"100%";
+}
+
+td:hover{
+    background-color: white;
+}
+
+.bluehover:hover{
+    background-color:#00ffff !important; 
+}
+
+.yellowhover:hover{
+    background-color: #fbfb00 !important;
+}
+
+.pinkhover:hover{
+    background-color: #ff00ff !important;
+}

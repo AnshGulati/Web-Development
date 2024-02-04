@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    display:grid;
+    place-items: center;
+}
+
+header {
+    margin-top:0px;
+    width:100%;
+    padding: 1px;
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content: center;
+    gap:10rem;
+    font-family: poppins;
+}
+
+.Logo{
+    display:flex;
+    gap:4rem;
+    font-size: 30px;
+    align-items: center;
+}
+
+.Information{
+    padding:50px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    width:80%;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+img {
+    width:10% ;
+    height: 10% ;
+}
