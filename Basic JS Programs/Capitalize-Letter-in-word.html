@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize-Letter</title>
+</head>
+
+<body>
+    <script>
+        function capitalizeWords(str) {
+            const words = str.split(" ");
+            for (let i = 0; i < words.length; i++) {
+                words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+            }
+            const capitalizedString = words.join(" ");
+            return capitalizedString;
+        }
+
+        const inputString = prompt("Enter the String: ");
+        const capitalizedString = capitalizeWords(inputString);
+        document.write(capitalizedString);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime-Numbers</title>
+</head>
+
+<body>
+    <script>
+        function printPrimeNumbers(start, end) {
+            const primes = [];
+            for (let num = start; num <= end; num++) {
+                let isPrime = true;
+
+                if (num <= 1) {
+                    isPrime = false;
+                } else {
+                    for (let i = 2; i <= Math.sqrt(num); i++) {
+                        if (num % i === 0) {
+                            isPrime = false;
+                            break;
+                        }
+                    }
+                }
+
+                if (isPrime) {
+                    primes.push(num);
+                }
+            }
+            return primes;
+        }
+
+        const num1 = parseInt(prompt("Enter the starting number:"));
+        const num2 = parseInt(prompt("Enter the ending number:"));
+        const primes = printPrimeNumbers(num1, num2);
+
+        const resultElement = document.createElement('h2');
+        resultElement.textContent = `Prime numbers between ${num1} and ${num2} are: ${primes.join(', ')}`;
+        document.body.appendChild(resultElement);
+    </script>
+</body>
+
+</html>

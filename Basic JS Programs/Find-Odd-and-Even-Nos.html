@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find-Odd-and-Even-Nos</title>
+</head>
+
+<body>
+    <script>
+        function findOddAndEvenNumbers() {
+            let oddNumbers = [];
+            let evenNumbers = [];
+
+            for (let i = 1; i <= 100; i++) {
+                if (i % 2 === 0) {
+                    evenNumbers.push(i);
+                } else {
+                    oddNumbers.push(i);
+                }
+            }
+
+            document.body.innerHTML=(`<h2>Even numbers from 1 to 100:, ${evenNumbers.join(", ")}</h2><h2>Odd numbers from 1 to 100:, ${oddNumbers.join(", ")}</h2>`);
+        }
+
+        findOddAndEvenNumbers();
+
+    </script>
+</body>
+
+</html>

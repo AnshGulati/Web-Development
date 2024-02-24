@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number</title>
+</head>
+
+<body>
+    <script>
+        function findLargestInteger(num1, num2) {
+            if (num1 > num2) {
+                return num1;
+            } else {
+                return num2;
+            }
+        }
+
+        const num1 = parseInt(prompt("Enter the first integer:"));
+        const num2 = parseInt(prompt("Enter the second integer:"));
+
+        const largestInteger = findLargestInteger(num1, num2);
+        document.write("The largest integer is: " + largestInteger);
+
+    </script>
+</body>
+
+</html>

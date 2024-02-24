@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <script>
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        function subtract(num1, num2) {
+            return num1 - num2;
+        }
+
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+
+        function divide(num1, num2) {
+            if (num2 === 0) {
+                return "Error! Division by zero.";
+            } else {
+                return num1 / num2;
+            }
+        }
+
+        function calculate(num1, operator, num2) {
+            switch (operator) {
+                case '+':
+                    return add(num1, num2);
+                case '-':
+                    return subtract(num1, num2);
+                case '*':
+                    return multiply(num1, num2);
+                case '/':
+                    return divide(num1, num2);
+                default:
+                    return "Invalid operator";
+            }
+        }
+
+        const number1 = parseFloat(prompt("Enter the first number:"));
+        const operator = prompt("Enter the operator (+, -, *, /):");
+        const number2 = parseFloat(prompt("Enter the second number:"));
+
+        const result = calculate(number1, operator, number2);
+        document.write("Result:", result);
+
+    </script>
+</body>
+
+</html>
