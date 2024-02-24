@@ -7,14 +7,14 @@
 body{
     width:100%;
     height:100vh;
-    background-image: linear-gradient(to bottom right,rgb(240, 86, 202),rgb(67, 216, 236)) ;
+    background-image: linear-gradient(to bottom right, rgb(255 102 217), rgb(16 227 255 / 84%));
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .container{
-    padding-top: 5rem ;
+    padding-top: 4rem ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,35 +23,59 @@ body{
 header{
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.45));
     backdrop-filter: blur(1rem);
-    width:70%;
-    height: 80vh;
-    padding:40px 30px;
-    border-radius: 50px;
+    width:75%;
+    height: 88vh;
+    padding:46px 30px;
+    border-radius: 75px;
 }
 
 h1{
     text-align: center;
-    font-size: 2.7rem;
-    padding-bottom: 4rem;
-    color:white;
+    font-size: 2.9rem;
+    padding-bottom: 3.25rem;
+    color:#202020;
 }
 
 form{
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    float: left;
-    padding-left: 2rem;
-    font-size: 1.3rem;
-    gap:1.8rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 2rem;
+}
+
+input[type="text"]{
+    width: 66%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="password"]{
+    width: 63%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select{
+    width: 26%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"]{
+    border: 1px solid #ccc;
 }
 
 button{
-    margin-top: 1.2rem;
-    padding: 0.8rem 1.5rem;
+    margin-top: 1.1rem;
+    padding: 1.1rem 2.3rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: #f3f4f6;
     background-color: #669ccb;
     font-size: 0.8rem;
